@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom';
 
-import ExamplePage from '../pages/_examplePage/examplePage';
+import ExamplePage from '../pages/_ExamplePage/ExamplePage';
+import HomePage from '../pages/HomePage/HomePage';
+import Template from '../pages/Template/Template';
 
 class Router extends Component {
     constructor(props) {
@@ -19,15 +21,21 @@ class Router extends Component {
                 <Switch>
 
                     <Route exact path="/">
-                        <h1>Home</h1>
+                        <Template title="Home">
+                            <HomePage />
+                        </Template>
                     </Route>
 
                     <Route exact path="/example">
-                        <ExamplePage />
+                        <Template title="Example">
+                            <ExamplePage />
+                        </Template>
                     </Route>
 
                     <Route path="*">
-                        <h1>404</h1>
+                        <Template title="404">
+                            <h1>404</h1>
+                        </Template>
                     </Route>
 
                 </Switch>

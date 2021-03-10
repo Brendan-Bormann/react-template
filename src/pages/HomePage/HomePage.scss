@@ -1,0 +1,11 @@
+@import '../../global.scss';
+
+.HomePage {
+    color: red;
+}
+
+// from mobile => to desktop
+@media only screen and (min-width: 0px) {}
+
+// from desktop => to mobile
+@media only screen and (max-width: 0px) {}

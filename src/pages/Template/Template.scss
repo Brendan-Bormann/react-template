@@ -1,0 +1,14 @@
+@import '../../global.scss';
+
+.Template {
+    width: calc(min(90%, 1200px));
+    margin: 0 auto;
+
+    height: 100vh;
+}
+
+// from mobile => to desktop
+@media only screen and (min-width: 0px) {}
+
+// from desktop => to mobile
+@media only screen and (max-width: 0px) {}
