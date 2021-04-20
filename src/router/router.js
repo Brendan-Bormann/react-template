@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom';
 
-import ExamplePage from '../pages/_ExamplePage/ExamplePage';
+import ExamplePage from '../pages/_examplePage/examplePage';
 import HomePage from '../pages/HomePage/HomePage';
 import Template from '../pages/Template/Template';
 
